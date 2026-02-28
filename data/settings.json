@@ -1,0 +1,72 @@
+{
+  "contact": {
+    "email": "talentuedu@gmail.com",
+    "phone": "778-522-9185",
+    "address1": "5000 Kingsway #200",
+    "address2": "Burnaby, BC V5H 4K7"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/share/1HBDGQh7UD/?mibextid=wwXIfr",
+    "instagram": "https://www.instagram.com/talentufrench?igsh=MTQxdXlicjc1YThpbQ==",
+    "whatsapp": "17785229185",
+    "line_id": "YOUR_LINE_ID"
+  },
+  "stats": {
+    "students": "160+",
+    "year": "2017",
+    "success_rate": "92%",
+    "teachers": "6"
+  },
+  "hero": {
+    "title": "Dis \"Bonjour\"",
+    "subtitle_en": "Prepare for your TCF Canada exam with expert guidance.<br>From beginner to B2, achieve your CLB 7 and unlock your Canadian immigration goals.",
+    "subtitle_fr": "Préparez votre examen TCF Canada avec des experts.<br>Du débutant au niveau B2, atteignez le NCLC 7 et réalisez vos objectifs d'immigration au Canada."
+  },
+  "pricing": [
+    {
+      "length": "1-month",
+      "hours_rate": "24h, $16/hour",
+      "tuition": "$384",
+      "registration": "$150",
+      "total": "$534",
+      "payment_plan": "Full Payment",
+      "badge": ""
+    },
+    {
+      "length": "4-month",
+      "hours_rate": "96h, $15/hour",
+      "tuition": "$1,440",
+      "registration": "$150",
+      "total": "$1,590",
+      "payment_plan": "1st: $870\n2nd-4th: $240",
+      "badge": ""
+    },
+    {
+      "length": "7-month",
+      "hours_rate": "168h, $14.5/hour",
+      "tuition": "$2,436",
+      "registration": "$150",
+      "total": "$2,586",
+      "payment_plan": "1st: $810\n2nd-7th: $296",
+      "badge": ""
+    },
+    {
+      "length": "10-month",
+      "hours_rate": "240h, $13.5/hour",
+      "tuition": "$3,240",
+      "registration": "$150",
+      "total": "$3,390",
+      "payment_plan": "1st: $870\n2nd-9th: $317.5\n10th: $200",
+      "badge": "Best Value"
+    },
+    {
+      "length": "6-month Intensive",
+      "hours_rate": "$13.5/hour",
+      "tuition": "$3,888",
+      "registration": "$150",
+      "total": "$4,038",
+      "payment_plan": "1st: $1,211.5\n2nd-6th: $565.32",
+      "badge": "Intensive"
+    }
+  ]
+}
