@@ -1,0 +1,75 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: "en"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "data/settings.json"
+        format: json
+        fields:
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Address Line 1", name: "address1", widget: "string" }
+              - { label: "Address Line 2", name: "address2", widget: "string" }
+
+          - label: "Social Media Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+              - { label: "WhatsApp Number (e.g. 17785229185)", name: "whatsapp", widget: "string" }
+              - { label: "LINE ID", name: "line_id", widget: "string" }
+
+          - label: "Stats"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Students Achieved Goals", name: "students", widget: "string", default: "160+" }
+              - { label: "Year Established", name: "year", widget: "string", default: "2017" }
+              - { label: "Success Rate", name: "success_rate", widget: "string", default: "92%" }
+              - { label: "Number of Expert Teachers", name: "teachers", widget: "string", default: "6" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string", default: "Dis \"Bonjour\"" }
+              - { label: "Subtitle (English)", name: "subtitle_en", widget: "text" }
+              - { label: "Subtitle (French)", name: "subtitle_fr", widget: "text" }
+
+          - label: "Teachers"
+            name: "teachers"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title (English)", name: "title_en", widget: "string" }
+              - { label: "Title (French)", name: "title_fr", widget: "string" }
+              - { label: "Bio (English)", name: "bio_en", widget: "text" }
+              - { label: "Bio (French)", name: "bio_fr", widget: "text" }
+              - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Upload teacher photo (recommended: square, min 300x300px)" }
+
+          - label: "Pricing"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - { label: "Program Length", name: "length", widget: "string" }
+              - { label: "Hours / Rate", name: "hours_rate", widget: "string" }
+              - { label: "Tuition", name: "tuition", widget: "string" }
+              - { label: "Registration Fee", name: "registration", widget: "string" }
+              - { label: "Total Fee", name: "total", widget: "string" }
+              - { label: "Payment Plan", name: "payment_plan", widget: "text" }
+              - { label: "Badge (e.g. Best Value)", name: "badge", widget: "string", required: false }
