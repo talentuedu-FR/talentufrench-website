@@ -22,6 +22,16 @@
     "subtitle_en": "Prepare for your TCF Canada exam with expert guidance.<br>From beginner to B2, achieve your CLB 7 and unlock your Canadian immigration goals.",
     "subtitle_fr": "Préparez votre examen TCF Canada avec des experts.<br>Du débutant au niveau B2, atteignez le NCLC 7 et réalisez vos objectifs d'immigration au Canada."
   },
+  "teachers": [
+    {
+      "name": "Justin Bassinga",
+      "title_en": "Native French Instructor | 6 Years Experience | TCF Canada Specialist",
+      "title_fr": "Professeur natif | 6 ans d'expérience | Spécialiste TCF Canada",
+      "bio_en": "A native French speaker with a Bachelor's in Linguistics and an MBA, Justin has 6 years of experience teaching French at all levels (A1–C1). Deeply familiar with the TCF Canada exam format, he knows exactly which skills are tested and how to prepare students efficiently. His courses are tailored for immigrants and newcomers aiming for Canadian permanent residency.",
+      "bio_fr": "Locuteur natif, titulaire d'une licence en linguistique et d'un MBA, Justin possède 6 ans d'expérience dans l'enseignement du français, tous niveaux (A1–C1). Parfaitement familiarisé avec le TCF Canada, il maîtrise les points clés et les stratégies de réussite à cet examen. Ses cours sont conçus pour les immigrants et les nouveaux arrivants visant la résidence permanente au Canada.",
+      "photo": "/images/teacher-justin.jpg"
+    }
+  ],
   "pricing": [
     {
       "length": "1-month",
