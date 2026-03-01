@@ -31,6 +31,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#highlights" data-en="Course Highlights" data-fr="Points forts">Course Highlights</a></li>
+                <li><a href="#teachers" data-en="Our Teachers" data-fr="Nos professeurs">Our Teachers</a></li>
                 <li><a href="#courses" data-en="Courses" data-fr="Cours">Courses</a></li>
                 <li><a href="#inquire" class="btn btn-nav" data-en="Inquire Now" data-fr="Nous contacter">Inquire Now</a></li>
                 <li>
@@ -148,6 +149,17 @@
                 <div class="gallery-item">
                     <img src="images/classroom-3.jpg" alt="Interactive French lesson">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="teachers">
+        <div class="container">
+            <h2 data-en="Meet Our Teachers" data-fr="Nos professeurs">Meet Our Teachers</h2>
+            <p class="teachers-subtitle" data-en="Native French speakers dedicated to your success" data-fr="Des professeurs francophones natifs dévoués à votre réussite">Native French speakers dedicated to your success</p>
+            <div class="teachers-grid" id="teachers-grid">
+                <!-- Populated dynamically from settings.json -->
             </div>
         </div>
     </section>
@@ -400,6 +412,24 @@
             if (data.hero) {
               const heroTitle = document.querySelector('.cms-hero-title');
               if (heroTitle) heroTitle.textContent = data.hero.title;
+            }
+            // Teachers
+            if (data.teachers && data.teachers.length > 0) {
+              const grid = document.getElementById('teachers-grid');
+              if (grid) {
+                grid.innerHTML = data.teachers.map(t => {
+                  const photoHTML = t.photo
+                    ? `<img src="${t.photo}" alt="${t.name}" class="teacher-photo">`
+                    : `<div class="teacher-photo-placeholder">${t.name.charAt(0)}</div>`;
+                  return `
+                    <div class="teacher-card">
+                      ${photoHTML}
+                      <h3 class="teacher-name">${t.name}</h3>
+                      <p class="teacher-title" data-en="${t.title_en || ''}" data-fr="${t.title_fr || t.title_en || ''}">${t.title_en || ''}</p>
+                      <p class="teacher-bio" data-en="${t.bio_en || ''}" data-fr="${t.bio_fr || t.bio_en || ''}">${t.bio_en || ''}</p>
+                    </div>`;
+                }).join('');
+              }
             }
           })
           .catch(() => {}); // Fail silently, use static HTML as fallback

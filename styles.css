@@ -547,6 +547,106 @@ h1, h2, h3 {
     font-size: 1rem;
 }
 
+/* Teachers Section */
+.teachers {
+    padding: 100px 20px;
+    background: var(--bg-light);
+}
+
+.teachers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.teachers-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.teacher-card {
+    text-align: center;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.teacher-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 4px solid var(--accent);
+}
+
+.teacher-photo-placeholder {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    border: 4px solid var(--accent);
+}
+
+.teacher-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.teacher-title {
+    color: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.teacher-bio {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Inquire Section */
 .inquire {
     padding: 100px 20px;
