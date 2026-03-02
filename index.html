@@ -311,7 +311,8 @@
         <div class="container">
             <h2 data-en="Inquire" data-fr="Nous contacter">Inquire</h2>
             <p class="inquire-subtitle" data-en="Ready to start your French learning journey? Fill out the form below and we'll get back to you soon." data-fr="Prêt à commencer votre parcours d'apprentissage du français ? Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.">Ready to start your French learning journey? Fill out the form below and we'll get back to you soon.</p>
-            <form class="inquire-form">
+            <form class="inquire-form" name="inquiry" method="POST" data-netlify="true" id="inquire-form">
+                <input type="hidden" name="form-name" value="inquiry">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName" data-en="First Name" data-fr="Prénom">First Name</label>
@@ -336,6 +337,11 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-full" data-en="Submit" data-fr="Envoyer">Submit</button>
             </form>
+            <div id="form-success" style="display:none; text-align:center; padding:30px; background:white; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.08); max-width:500px; margin:0 auto;">
+                <div style="font-size:3rem; margin-bottom:15px;">✓</div>
+                <h3 style="color:#1a2a3a; margin-bottom:10px;" data-en="Message Sent!" data-fr="Message envoyé !">Message Sent!</h3>
+                <p style="color:#666;" data-en="Thank you! We'll get back to you within 24 hours." data-fr="Merci ! Nous vous répondrons dans les 24 heures.">Thank you! We'll get back to you within 24 hours.</p>
+            </div>
         </div>
     </section>
 
@@ -433,6 +439,28 @@
             }
           })
           .catch(() => {}); // Fail silently, use static HTML as fallback
+
+        // Netlify Forms submission
+        const inquireForm = document.getElementById('inquire-form');
+        if (inquireForm) {
+          inquireForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(inquireForm);
+            fetch('/', { method: 'POST', body: formData })
+              .then(() => {
+                inquireForm.style.display = 'none';
+                const success = document.getElementById('form-success');
+                if (success) {
+                  success.style.display = 'block';
+                  // Apply current language to success message
+                  success.querySelectorAll('[data-en][data-fr]').forEach(el => {
+                    el.innerHTML = el.getAttribute('data-' + currentLang);
+                  });
+                }
+              })
+              .catch(() => { inquireForm.submit(); });
+          });
+        }
 
         // Netlify Identity redirect
         if (window.netlifyIdentity) {
