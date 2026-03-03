@@ -311,8 +311,10 @@
         <div class="container">
             <h2 data-en="Inquire" data-fr="Nous contacter">Inquire</h2>
             <p class="inquire-subtitle" data-en="Ready to start your French learning journey? Fill out the form below and we'll get back to you soon." data-fr="Prêt à commencer votre parcours d'apprentissage du français ? Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.">Ready to start your French learning journey? Fill out the form below and we'll get back to you soon.</p>
-            <form class="inquire-form" name="inquiry" method="POST" data-netlify="true" id="inquire-form">
-                <input type="hidden" name="form-name" value="inquiry">
+            <form class="inquire-form" action="https://api.web3forms.com/submit" method="POST" id="inquire-form">
+                <input type="hidden" name="access_key" value="816264fc-8be3-4558-8add-8bff33a18e34">
+                <input type="hidden" name="subject" value="New Inquiry from TalentU Website">
+                <input type="hidden" name="redirect" value="false">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName" data-en="First Name" data-fr="Prénom">First Name</label>
@@ -440,22 +442,26 @@
           })
           .catch(() => {}); // Fail silently, use static HTML as fallback
 
-        // Netlify Forms submission
+        // Web3Forms submission
         const inquireForm = document.getElementById('inquire-form');
         if (inquireForm) {
           inquireForm.addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(inquireForm);
-            fetch('/', { method: 'POST', body: formData })
-              .then(() => {
-                inquireForm.style.display = 'none';
-                const success = document.getElementById('form-success');
-                if (success) {
-                  success.style.display = 'block';
-                  // Apply current language to success message
-                  success.querySelectorAll('[data-en][data-fr]').forEach(el => {
-                    el.innerHTML = el.getAttribute('data-' + currentLang);
-                  });
+            fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+              .then(r => r.json())
+              .then(data => {
+                if (data.success) {
+                  inquireForm.style.display = 'none';
+                  const success = document.getElementById('form-success');
+                  if (success) {
+                    success.style.display = 'block';
+                    success.querySelectorAll('[data-en][data-fr]').forEach(el => {
+                      el.innerHTML = el.getAttribute('data-' + currentLang);
+                    });
+                  }
+                } else {
+                  inquireForm.submit();
                 }
               })
               .catch(() => { inquireForm.submit(); });
