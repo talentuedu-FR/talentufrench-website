@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | TalentU French</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="TalentU" class="logo-img">
+                <span>TalentU French</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#highlights" data-en="Course Highlights" data-fr="Points forts">Course Highlights</a></li>
+                <li><a href="index.html#teachers" data-en="Our Teachers" data-fr="Nos professeurs">Our Teachers</a></li>
+                <li><a href="index.html#courses" data-en="Courses" data-fr="Cours">Courses</a></li>
+                <li><a href="blog.html" data-en="Blog" data-fr="Blog">Blog</a></li>
+                <li><a href="index.html#inquire" class="btn btn-nav" data-en="Inquire Now" data-fr="Nous contacter">Inquire Now</a></li>
+                <li>
+                    <button class="lang-toggle" onclick="toggleLanguage()">
+                        <span class="lang-en">FR</span>
+                        <span class="lang-fr" style="display:none;">EN</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Post Content -->
+    <section class="blog-post-section">
+        <div class="container blog-post-container">
+            <a href="blog.html" class="blog-back" id="back-link">← Back to Blog</a>
+            <div id="post-content">
+                <div style="text-align:center; padding:80px 0; color:#999;">Loading...</div>
+            </div>
+            <div class="blog-post-cta">
+                <h3 data-en="Ready to prepare for your TCF Canada?" data-fr="Prêt à préparer votre TCF Canada ?">Ready to prepare for your TCF Canada?</h3>
+                <p data-en="Join TalentU and get expert guidance from native French teachers." data-fr="Rejoignez TalentU et bénéficiez de l'accompagnement d'enseignants francophones natifs.">Join TalentU and get expert guidance from native French teachers.</p>
+                <a href="index.html#inquire" class="btn btn-primary" data-en="Inquire Now" data-fr="Nous contacter">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TalentU French</h3>
+                    <p data-en="Your path to French fluency starts here." data-fr="Votre chemin vers la maîtrise du français commence ici.">Your path to French fluency starts here.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1HBDGQh7UD/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/talentufrench?igsh=MTQxdXlicjc1YThpbQ==" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://wa.me/17785229185" target="_blank" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-en="Contact Us" data-fr="Contactez-nous">Contact Us</h4>
+                    <p><strong data-en="Email:" data-fr="Courriel :">Email:</strong> talentuedu@gmail.com</p>
+                    <p><strong data-en="Phone:" data-fr="Téléphone :">Phone:</strong> 778-522-9185</p>
+                </div>
+                <div class="footer-address">
+                    <h4 data-en="Location" data-fr="Adresse">Location</h4>
+                    <p>5000 Kingsway #200</p>
+                    <p>Burnaby, BC V5H 4K7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="&copy; 2026 TalentU Education. All rights reserved." data-fr="&copy; 2026 TalentU Education. Tous droits réservés.">&copy; 2026 TalentU Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+        let currentPost = null;
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            document.querySelector('.lang-en').style.display = currentLang === 'en' ? 'inline' : 'none';
+            document.querySelector('.lang-fr').style.display = currentLang === 'fr' ? 'inline' : 'none';
+            document.querySelectorAll('[data-en][data-fr]').forEach(el => {
+                el.innerHTML = el.getAttribute('data-' + currentLang);
+            });
+            document.documentElement.lang = currentLang;
+            if (currentPost) renderPost(currentPost);
+        }
+
+        function formatDate(dateStr) {
+            const d = new Date(dateStr);
+            return d.toLocaleDateString(currentLang === 'fr' ? 'fr-CA' : 'en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function renderPost(post) {
+            const title = currentLang === 'fr' ? post.title_fr : post.title_en;
+            const content = currentLang === 'fr' ? post.content_fr : post.content_en;
+            document.title = title + ' | TalentU French';
+            document.getElementById('post-content').innerHTML = `
+                <div class="blog-post-meta">
+                    <span class="blog-category">${post.category}</span>
+                    <span class="blog-date">${formatDate(post.date)}</span>
+                </div>
+                <h1 class="blog-post-title">${title}</h1>
+                <div class="blog-post-body">${marked.parse(content)}</div>
+            `;
+            document.getElementById('back-link').textContent = currentLang === 'fr' ? '← Retour au blog' : '← Back to Blog';
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const postId = params.get('id');
+
+        if (!postId) {
+            window.location.href = 'blog.html';
+        } else {
+            fetch('/data/posts.json')
+                .then(r => r.json())
+                .then(data => {
+                    const post = (data.posts || []).find(p => p.id === postId);
+                    if (!post) {
+                        window.location.href = 'blog.html';
+                        return;
+                    }
+                    currentPost = post;
+                    renderPost(post);
+                })
+                .catch(() => {
+                    document.getElementById('post-content').innerHTML = '<p style="color:#666;text-align:center;padding:60px">Unable to load post.</p>';
+                });
+        }
+
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
