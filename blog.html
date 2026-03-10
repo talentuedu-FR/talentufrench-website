@@ -8,7 +8,6 @@
     <link rel="canonical" href="https://talentufrench.ca/blog.html">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -179,13 +178,6 @@
                 document.getElementById('blog-grid').innerHTML = '<p style="color:#666;text-align:center;padding:40px">Unable to load posts.</p>';
             });
 
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
-                }
-            });
-        }
     </script>
 </body>
 </html>
