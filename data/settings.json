@@ -24,7 +24,7 @@
   },
   "teachers": [
     {
-      "name": "Justin Bassinga",
+      "name": "Justin",
       "title_en": "Native French Instructor | 6 Years Experience | TCF Canada Specialist",
       "title_fr": "Professeur natif | 6 ans d'expérience | Spécialiste TCF Canada",
       "bio_en": "A native French speaker with a Bachelor's in Linguistics and an MBA, Justin has 6 years of experience teaching French at all levels (A1–C1). Deeply familiar with the TCF Canada exam format, he knows exactly which skills are tested and how to prepare students efficiently. His courses are tailored for immigrants and newcomers aiming for Canadian permanent residency.",
@@ -40,11 +40,11 @@
       "photo": "/images/teacher-ali.jpg"
     },
     {
-      "name": "Zoey",
+      "name": "Zoe",
       "title_en": "Fudan French Graduate | UBC Education MA | 50+ B2 Success Stories",
       "title_fr": "Diplômée Fudan & Maîtrise UBC | 50+ étudiants au niveau B2",
-      "bio_en": "Zoey holds a Bachelor's in French Language from Fudan University and a Master's in Education from UBC. Warm, outgoing, and genuinely caring, she creates a supportive and encouraging environment where students feel confident to speak and grow. Over the past 3 years specializing in TCF Canada preparation, she has guided 50+ students to achieve B2-level scores — and she brings the same enthusiasm and dedication to every single class.",
-      "bio_fr": "Zoey est titulaire d'une licence en langue française de l'Université Fudan et d'une maîtrise en éducation de l'UBC. Chaleureuse, ouverte et profondément attentionnée, elle crée une atmosphère bienveillante où les étudiants osent parler et progressent en confiance. Au cours des 3 dernières années consacrées à la préparation au TCF Canada, elle a accompagné plus de 50 étudiants jusqu'au niveau B2 — avec le même enthousiasme et la même implication pour chaque cours.",
+      "bio_en": "Zoe holds a Bachelor's in French Language from Fudan University and a Master's in Education from UBC. Warm, outgoing, and genuinely caring, she creates a supportive and encouraging environment where students feel confident to speak and grow. Over the past 3 years specializing in TCF Canada preparation, she has guided 50+ students to achieve B2-level scores — and she brings the same enthusiasm and dedication to every single class.",
+      "bio_fr": "Zoe est titulaire d'une licence en langue française de l'Université Fudan et d'une maîtrise en éducation de l'UBC. Chaleureuse, ouverte et profondément attentionnée, elle crée une atmosphère bienveillante où les étudiants osent parler et progressent en confiance. Au cours des 3 dernières années consacrées à la préparation au TCF Canada, elle a accompagné plus de 50 étudiants jusqu'au niveau B2 — avec le même enthousiasme et la même implication pour chaque cours.",
       "photo": "/images/teacher-zoey.jpg"
     }
   ],
