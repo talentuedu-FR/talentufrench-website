@@ -51,47 +51,47 @@
   "pricing": [
     {
       "length": "1-month",
-      "hours_rate": "24h, $16/hour",
-      "tuition": "$384",
-      "registration": "$150",
-      "total": "$534",
+      "hours_rate": "24h, $10/hour",
+      "tuition": "$240",
+      "registration": "$100",
+      "total": "$240",
       "payment_plan": "Full Payment",
-      "badge": ""
+      "badge": "Early Bird"
     },
     {
       "length": "4-month",
-      "hours_rate": "96h, $15/hour",
-      "tuition": "$1,440",
-      "registration": "$150",
-      "total": "$1,590",
-      "payment_plan": "1st: $870\n2nd-4th: $240",
+      "hours_rate": "5% discount",
+      "tuition": "$1,459",
+      "registration": "$100",
+      "total": "$1,559",
+      "payment_plan": "1st: $484\n2nd-4th: $358.4",
       "badge": ""
     },
     {
       "length": "7-month",
-      "hours_rate": "168h, $14.5/hour",
-      "tuition": "$2,436",
-      "registration": "$150",
-      "total": "$2,586",
-      "payment_plan": "1st: $810\n2nd-7th: $296",
+      "hours_rate": "8% discount",
+      "tuition": "$2,473",
+      "registration": "$100",
+      "total": "$2,573",
+      "payment_plan": "1st: $484\n2nd-6th: $384\n7th: $169",
       "badge": ""
     },
     {
       "length": "10-month",
-      "hours_rate": "240h, $13.5/hour",
-      "tuition": "$3,240",
-      "registration": "$150",
-      "total": "$3,390",
-      "payment_plan": "1st: $870\n2nd-9th: $317.5\n10th: $200",
+      "hours_rate": "10% discount",
+      "tuition": "$3,456",
+      "registration": "$100",
+      "total": "$3,556",
+      "payment_plan": "1st: $484\n2nd-9th: $317.5\n10th: Free",
       "badge": "Best Value"
     },
     {
       "length": "6-month Intensive",
-      "hours_rate": "$13.5/hour",
-      "tuition": "$3,888",
-      "registration": "$150",
-      "total": "$4,038",
-      "payment_plan": "1st: $1,211.5\n2nd-6th: $565.32",
+      "hours_rate": "288h, $13.5/hour",
+      "tuition": "$4,147",
+      "registration": "$100",
+      "total": "$4,147",
+      "payment_plan": "1st: $868\n2nd-5th: $768\n6th: $207.2",
       "badge": "Intensive"
     }
   ]
