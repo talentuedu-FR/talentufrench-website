@@ -8,6 +8,19 @@
     <link rel="canonical" href="https://talentufrench.ca/blog.html">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17988667838"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17988667838');
+      gtag('config', 'G-7FVPJSB0L2');
+      function trackWhatsAppClick(location) {
+        gtag('event', 'conversion', { 'send_to': 'AW-17988667838/WHATSAPP_LABEL' });
+        gtag('event', 'whatsapp_click', { 'event_category': 'WhatsApp', 'event_label': location || 'Unknown', 'value': 1 });
+      }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -182,7 +195,7 @@
     </script>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/17785229185" target="_blank" aria-label="Chat on WhatsApp" style="
+    <a href="https://wa.me/17785229185" target="_blank" aria-label="Chat on WhatsApp" onclick="trackWhatsAppClick('Blog Floating')" style="
         position:fixed;
         bottom:28px;
         right:28px;
