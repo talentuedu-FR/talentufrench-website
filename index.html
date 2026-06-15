@@ -650,6 +650,15 @@
                       el.innerHTML = el.getAttribute('data-' + currentLang);
                     });
                   }
+                  // Fire Google Ads conversion + GA4 lead event
+                  if (typeof gtag === 'function') {
+                    gtag('event', 'conversion', { 'send_to': 'AW-17988667838/CONVERSION_LABEL' });
+                    gtag('event', 'generate_lead', {
+                      'event_category': 'Inquire Form',
+                      'event_label': 'Homepage',
+                      'value': 1
+                    });
+                  }
                 } else {
                   inquireForm.submit();
                 }

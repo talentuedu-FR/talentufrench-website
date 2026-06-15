@@ -969,7 +969,10 @@
   <div class="form-wrap">
     <h3>Book Free Consultation</h3>
     <p>No commitment. We'll call you within 24 hours.</p>
-    <form action="mailto:talentuedu@gmail.com" method="post" enctype="text/plain">
+    <form id="tcf-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="816264fc-8be3-4558-8add-8bff33a18e34">
+      <input type="hidden" name="subject" value="New TCF Lead from talentufrench.ca/tcf">
+      <input type="hidden" name="redirect" value="false">
       <div class="form-group">
         <label>Your Name</label>
         <input type="text" name="name" placeholder="Full name" required>
@@ -1004,9 +1007,46 @@
       </div>
       <button type="submit" class="form-submit">Book My Free Consultation →</button>
     </form>
+    <div id="tcf-form-success" style="display:none; text-align:center; padding:30px; background:white; border-radius:8px; margin-top:20px;">
+      <div style="font-size:3rem; margin-bottom:15px;">✓</div>
+      <h3 style="color:#1a2a3a; margin-bottom:10px;">Booking Received!</h3>
+      <p style="color:#666;">Thank you! We'll contact you within 24 hours to schedule your free consultation.</p>
+    </div>
     <p class="form-privacy">📞 Or call us: +1 (778) 522-9185 · talentuedu@gmail.com</p>
   </div>
 </section>
+
+<script>
+  // TCF form submission with Google Ads conversion tracking
+  const tcfForm = document.getElementById('tcf-form');
+  if (tcfForm) {
+    tcfForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(tcfForm);
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+        .then(r => r.json())
+        .then(data => {
+          if (data.success) {
+            tcfForm.style.display = 'none';
+            const successDiv = document.getElementById('tcf-form-success');
+            if (successDiv) successDiv.style.display = 'block';
+            // Fire Google Ads conversion (replace CONVERSION_LABEL after creating in Google Ads)
+            if (typeof gtag === 'function') {
+              gtag('event', 'conversion', { 'send_to': 'AW-17988667838/CONVERSION_LABEL' });
+              gtag('event', 'generate_lead', {
+                'event_category': 'TCF Form',
+                'event_label': 'TCF Landing Page',
+                'value': 1
+              });
+            }
+          } else {
+            tcfForm.submit();
+          }
+        })
+        .catch(() => { tcfForm.submit(); });
+    });
+  }
+</script>
 
 <!-- FOOTER -->
 <footer>
