@@ -1027,7 +1027,6 @@
   // Track WhatsApp clicks as conversions
   function trackWhatsAppClick(location) {
     if (typeof gtag === 'function') {
-      gtag('event', 'conversion', { 'send_to': 'AW-17988667838/WHATSAPP_LABEL' });
       gtag('event', 'whatsapp_click', {
         'event_category': 'WhatsApp',
         'event_label': location || 'Unknown',
@@ -1049,7 +1048,7 @@
             tcfForm.style.display = 'none';
             const successDiv = document.getElementById('tcf-form-success');
             if (successDiv) successDiv.style.display = 'block';
-            // Fire Google Ads conversion (replace CONVERSION_LABEL after creating in Google Ads)
+            // Fire Google Ads conversion after a confirmed TCF form submission.
             if (typeof gtag === 'function') {
               gtag('event', 'conversion', { 'send_to': 'AW-17988667838/UBHWCLq6678cEL6T1YFD' });
               gtag('event', 'generate_lead', {
