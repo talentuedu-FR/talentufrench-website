@@ -54,6 +54,14 @@
       "bio_en": "Brian holds a Bachelor of Arts with an Advanced Major in French and a Minor in Russian from the University of Manitoba. He has experience in one-on-one and small-group French instruction, lesson planning, grammar, pronunciation, and conversation coaching for beginner to intermediate learners.",
       "bio_fr": "Brian est titulaire d'un baccalauréat avec majeure avancée en français et mineure en russe de l'Université du Manitoba. Il possède de l'expérience en enseignement individuel et en petits groupes, avec un accent sur la grammaire, la prononciation et la conversation pour les niveaux débutant à intermédiaire.",
       "photo": "/images/teacher-brian.jpg"
+    },
+    {
+      "name": "Ambre",
+      "title_en": "INALCO Paris Graduate | French C2 | Linguistics & NLP",
+      "title_fr": "Diplômée de l'INALCO Paris | Français C2 | Linguistique & TAL",
+      "bio_en": "Ambre holds a Master's in Natural Language Processing and a Bachelor's in Linguistics from INALCO Paris, both with honours. Fluent in French, English, and Japanese, and a native Mandarin speaker, she brings a strong academic foundation in language acquisition, phonetics, French grammar, and learner-centred instruction.",
+      "bio_fr": "Ambre est titulaire d'un master en traitement automatique des langues et d'une licence en linguistique de l'INALCO Paris, tous deux obtenus avec mention. Elle parle couramment français, anglais et japonais, et sa langue maternelle est le mandarin. Son enseignement s'appuie sur une solide formation en acquisition du langage, phonétique, grammaire française et pédagogie centrée sur l'apprenant.",
+      "photo": "/images/teacher-amber.jpg"
     }
   ],
   "pricing": [
