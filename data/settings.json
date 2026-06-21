@@ -66,8 +66,8 @@
   ],
   "pricing": [
     {
-      "length": "1-month",
-      "hours_rate": "24h, $16/hour",
+      "length": "0-A1",
+      "hours_rate": "1-month (no discount)",
       "tuition": "$384",
       "registration": "$100",
       "total": "$484",
@@ -75,39 +75,39 @@
       "badge": ""
     },
     {
-      "length": "4-month",
-      "hours_rate": "96h, $15/hour",
-      "tuition": "$1,440",
-      "registration": "$150",
-      "total": "$1,590",
-      "payment_plan": "1st: $870\n2nd-4th: $240",
+      "length": "0-A2",
+      "hours_rate": "4-month (5% discount)",
+      "tuition": "$1,536 - $153.6 discount",
+      "registration": "$100",
+      "total": "$1,382.4",
+      "payment_plan": "1st: $484\n2nd-4th: $384",
       "badge": ""
     },
     {
-      "length": "7-month",
-      "hours_rate": "168h, $14.5/hour",
-      "tuition": "$2,436",
-      "registration": "$150",
-      "total": "$2,586",
-      "payment_plan": "1st: $810\n2nd-7th: $296",
+      "length": "0-B1",
+      "hours_rate": "7-month (8% discount)",
+      "tuition": "$2,688 - $268.8 discount",
+      "registration": "$100",
+      "total": "$2,419.2",
+      "payment_plan": "1st: $484\n2nd-7th: $384",
       "badge": ""
     },
     {
-      "length": "10-month",
-      "hours_rate": "240h, $13.5/hour",
-      "tuition": "$3,240",
-      "registration": "$150",
-      "total": "$3,390",
-      "payment_plan": "1st: $870\n2nd-9th: $317.5\n10th: $200",
+      "length": "0-B2",
+      "hours_rate": "10-month (10% discount)",
+      "tuition": "$3,840 - $384 discount",
+      "registration": "$100",
+      "total": "$3,556",
+      "payment_plan": "1st: $484\n2nd-10th: $384",
       "badge": "Best Value"
     },
     {
-      "length": "6-month Intensive",
-      "hours_rate": "$13.5/hour",
-      "tuition": "$3,888",
-      "registration": "$150",
-      "total": "$4,038",
-      "payment_plan": "1st: $1,211.5\n2nd-6th: $565.32",
+      "length": "0-B2 Intensive Program",
+      "hours_rate": "6-month (10% discount)",
+      "tuition": "$4,608 - $460.8 discount",
+      "registration": "$100",
+      "total": "$4,247.2",
+      "payment_plan": "1st: $868\n2nd-6th: $768",
       "badge": "Intensive"
     }
   ]
